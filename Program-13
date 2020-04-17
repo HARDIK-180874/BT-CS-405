@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+class A
+{
+public:
+    int x;
+    void value1()
+    {
+        cout<<"enter the value of x..:-"<<endl;
+        cin>>x;
+    }
+};
+class B : public A
+{
+public:
+    int y;
+    void value2()
+    {
+        cout<<"Enter the value of Y...:-"<<endl;
+        cin>>y;
+    }
+
+};
+class C : public B
+{
+public:
+    int a;
+    int z;
+    void get()
+    {
+        cout<<"Enter the value of Z....:-"<<endl;
+        cin>>z;
+    }
+    void multiply()
+    {
+        M=x*y*z;
+        cout<<"The Multiplication of Three Numbers is...:-"<<a<<endl;
+    }
+};
+int main()
+{
+    C s;
+    s.value1();
+    s.value2();
+    s.get();
+    s.multiply();
+    return 0;
+}
+
+
