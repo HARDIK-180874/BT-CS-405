@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+class X
+{
+public:
+    int a;
+    void data1()
+    {
+        cout<<"enter the value of a is :-"<<endl;
+        cin>>a;
+    }
+};
+class Y
+{
+public:
+  int b;
+    void data2()
+    {
+        cout<<"enter the value of b is :-"<<endl;
+        cin>>b;
+    }
+};
+class Z : public X, public Y
+{
+public:
+    void total()
+    {
+        cout<<"Total Sum is.....:-"<<(a+b)<<endl;
+    }
+};
+int main()
+{
+    C c1;
+    c1.data1();
+    c1.data2();
+    c1.total();
+    return 0;
+
+}
