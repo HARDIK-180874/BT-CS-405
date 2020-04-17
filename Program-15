@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class first
+{
+public:
+    first()
+    {
+    cout<<"HARDIK\t";
+    }
+};
+class last
+{
+   first f1;
+public:
+    last()
+    {
+        cout<<"SAINI";
+    }
+};
+
+int main()
+{
+    last l1;
+    return 0;
+}
