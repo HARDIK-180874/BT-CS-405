@@ -1,0 +1,30 @@
+//program to check the number is odd or even
+#include <iostream>
+using namespace std;
+class number
+{
+    int x,result;
+public:
+    int check(int x);
+    };
+
+        int number::check(int x)
+        {
+
+        if(x%2==0)
+
+            cout<<"even";
+
+        else
+        cout<<"odd";
+         }
+
+int main()
+{
+    int x;
+    number s;
+    cout<<"enter the value of x"<<endl;
+    cin>>x;
+    s.check(x);
+    return 0;
+}
